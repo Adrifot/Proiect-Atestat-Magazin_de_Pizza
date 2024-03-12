@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/comanda.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Balsamiq+Sans&family=Neucha&display=swap" rel="stylesheet">
+    <title>Pagina de Comanda - Pizza Online</title>
+</head>
+<body>
+    <nav> 
+        <div id="nav_logo">
+            <img src="images/pizza_logo.png" alt="pizza_logo">
+            <a href="index.html" id="web_name">Pizza Online</a>
+        </div>
+        <div id="nav_links">
+            <a href="index.html">Pagina Principala</a>
+            <a href="menu.html">Meniu</a>
+            <a href="comanda.html">Comanda</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+    <img src="images/comanda_banner.png" alt="banner" id="comanda_banner">
+    <div id="pizza_list">
+        <div class="pizza_cell" id="margherita">
+            <div class="infoimg">
+                <img src="images/margherita_menu.jpg" alt="margherita" class="pizza_img">
+                <div class="pizza_infoname">
+                    <h4>Margherita</h4>
+                    <p>Rosii, Mozzarella, Busuioc</p>
+                    <p class="price">18RON</p>
+                </div>
+            </div>
+            <div class="nr_select">
+                <img src="images/minus_button.png" alt="minus" class="minbut">
+                <input type="number" min="0" value="0" step="1" class="input" oninput="this.value = Math.abs(this.value)">
+                <img src="images/plus_button.png" alt="plus" class="plusbut">
+            </div>
+        </div>
+        <div class="pizza_cell" id="stagioni">
+            <div class="infoimg">
+                <img src="images/quattro_stagioni_menu.jpg" alt="4 stagioni" class="pizza_img">
+                <div class="pizza_infoname">
+                    <h4>Quattro Stagioni</h4>
+                    <p>Rosii, Ciuperci, Sunca, Masline...</p>
+                    <p class="price"><span id="oldPrice">24RON</span> <span id="newPrice">18RON</span></p>
+                </div>
+            </div>
+            <div class="nr_select">
+                <img src="images/minus_button.png" alt="minus" class="minbut">
+                <input type="number" min="0" value="0" step="1" class="input" oninput="this.value = Math.abs(this.value)">
+                <img src="images/plus_button.png" alt="plus" class="plusbut">
+            </div>
+        </div>
+        <div class="pizza_cell" id="formaggi">
+            <div class="infoimg">
+                <img src="images/quattro_formaggi_menu.jpg" alt="4 formaggi" class="pizza_img">
+                <div class="pizza_infoname">
+                    <h4>Quattro Formaggi</h4>
+                    <p>Gorgonzola, Fontina, Mozzarella...</p>
+                    <p class="price">21RON</p>
+                </div>
+            </div>
+            <div class="nr_select">
+                <img src="images/minus_button.png" alt="minus" class="minbut">
+                <input type="number" min="0" value="0" step="1" class="input" oninput="this.value = Math.abs(this.value)">
+                <img src="images/plus_button.png" alt="plus" class="plusbut">
+            </div>
+        </div>
+        <div class="pizza_cell" id="pepperoni">
+            <div class="infoimg">
+                <img src="images/pepperoni_menu.jpg" alt="pepperoni" class="pizza_img">
+                <div class="pizza_infoname">
+                    <h4>Pepperoni</h4>
+                    <p>Pepperoni, Boia, Oregano...</p>
+                    <p class="price">20RON</p>
+                </div>
+            </div>
+            <div class="nr_select">
+                <img src="images/minus_button.png" alt="minus" class="minbut">
+                <input type="number" min="0" value="0" step="1" class="input" oninput="this.value = Math.abs(this.value)">
+                <img src="images/plus_button.png" alt="plus" class="plusbut">
+            </div>
+        </div>
+        <div class="pizza_cell" id="vegan">
+            <div class="infoimg">
+                <img src="images/vegan_menu.jpg" alt="vegana" class="pizza_img">
+                <div class="pizza_infoname">
+                    <h4>Vegana</h4>
+                    <p>Rosii, Ardei Gras, Ciuperci, Parmezan</p>
+                    <p class="price">24RON</p>
+                </div>
+            </div>
+            <div class="nr_select">
+                <img src="images/minus_button.png" alt="minus" class="minbut">
+                <input type="number" min="0" value="0" step="1" class="input" oninput="this.value = Math.abs(this.value)">
+                <img src="images/plus_button.png" alt="plus" class="plusbut">
+            </div>
+        </div>
+        <div class="pizza_cell" id="shrimp">
+            <div class="infoimg">
+                <img src="images/shrimp_menu.jpg" alt="creveti" class="pizza_img">
+                <div class="pizza_infoname">
+                    <h4>Cu Creveti</h4>
+                    <p>Creveti, Usturoi, Ceapa, Oregano...</p>
+                    <p class="price">26RON</p>
+                </div>
+            </div>
+            <div class="nr_select">
+                <img src="images/minus_button.png" alt="minus" class="minbut">
+                <input type="number" min="0" value="0" step="1" class="input" oninput="this.value = Math.abs(this.value)">
+                <img src="images/plus_button.png" alt="plus" class="plusbut">
+            </div>
+        </div>
+        <div class="pizza_cell" id="marinara">
+            <div class="infoimg">
+                <img src="images/marinara_menu.png" alt="marinara" class="pizza_img">
+                <div class="pizza_infoname">
+                    <h4>Marinara <span id="new">(NOU!)</span></h4>
+                    <p>Rosii, Ceapa, Usturoi...</p>
+                    <p class="price">20RON</p>
+                </div>
+            </div>
+            <div class="nr_select">
+                <img src="images/minus_button.png" alt="minus" class="minbut">
+                <input type="number" min="0" value="0" step="1" class="input" oninput="this.value = Math.abs(this.value)">
+                <img src="images/plus_button.png" alt="plus" class="plusbut">
+            </div>
+        </div>
+        <div class="pizza_cell" id="hawaii">
+            <div class="infoimg">
+                <img src="images/hawaiian_menu.jpg" alt="hawaii" class="pizza_img">
+                <div class="pizza_infoname">
+                    <h4>Hawaiiana</h4>
+                    <p>Ananas, Sunca, Bacon, Rosii...</p>
+                    <p class="price">26RON</p>
+                </div>
+            </div>
+            <div class="nr_select">
+                <img src="images/minus_button.png" alt="minus" class="minbut">
+                <input type="number" min="0" value="0" step="1" class="input" oninput="this.value = Math.abs(this.value)">
+                <img src="images/plus_button.png" alt="plus" class="plusbut">
+            </div>
+        </div>
+        <p id="submit">COMANDA ACUM</p>
+    </div>
+    <div id="continue">
+        <p id="sure">Doriti sa comandati urmatoarele pizza?</p>
+        <div id="listBuys">
+            <p class="piz">Margherita: <span class="nr"></span> </p>
+            <p class="piz">Quattro Stagioni: <span class="nr"></span> </p>
+            <p class="piz">Quattro Formaggi: <span class="nr"></span> </p>
+            <p class="piz">Pepperoni: <span class="nr"></span> </p>
+            <p class="piz">Vegana: <span class="nr"></span> </p>
+            <p class="piz">Cu Creveti: <span class="nr"></span> </p>
+            <p class="piz">Marinara: <span class="nr"></span> </p>
+            <p class="piz">Hawaiiana: <span class="nr"></span> </p>
+            <p id="finPrice">Pret Final: <span id="price"></span></p>
+        </div>
+        <div id="buttons">
+            <p id="back" class="button"><span id="arr">&lt&lt</span> Inapoi</p>
+            <a href="infocomanda.html" id="contbut" class="button">Continua &gt&gt</a>
+        </div>
+    </div>
+    <footer>
+        <div id="foot_lvl1">
+            <a href="menu.html">Meniu</a>
+            <a href="comanda.html">Comanda</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div id="foot_lvl2">
+            Proiect de atestat realizat de Adrian-Mihael Fota, 12C, CNBS Calarasi
+        </div>
+     </footer>
+     <script src="scripts/comanda.js"></script>
+</body>
+</html>

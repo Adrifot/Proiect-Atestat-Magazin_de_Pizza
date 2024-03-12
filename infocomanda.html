@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/infocomanda.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Balsamiq+Sans&family=Neucha&display=swap" rel="stylesheet">
+    <title>Informatii Comanda - Pizza Online</title>
+</head>
+<body>
+    <nav> 
+        <div id="nav_logo">
+            <img src="images/pizza_logo.png" alt="pizza_logo">
+            <a href="index.html" id="web_name">Pizza Online</a>
+        </div>
+        <div id="nav_links">
+            <a href="index.html">Pagina Principala</a>
+            <a href="menu.html">Meniu</a>
+            <a href="comanda.html">Comanda</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+    <div id="main">
+        <h2>Informatii Comanda:</h2>
+        <form action="#"> <!-- Datele nu se trimit nicaieri - sunt prelucrate pe aceeasi pagina -->
+            <div class="inputPair">
+                <label for="nume">Nume*</label> <br>
+                <input type="text" id="nume" required>
+            </div>
+            <div class="inputPair">
+                <label for="prenume">Prenume*</label>  <br>
+                <input type="text" id="prenume" required>
+            </div>
+            <div class="inputPair">
+                <label for="email">E-mail*</label>  <br>
+                <input type="email" id="email" required>
+            </div>
+            <div class="inputPair">
+                <label for="tel">Nr. de telefon*</label>  <br>
+                <input type="tel" id="tel" maxlength="10"> 
+            </div>
+            <div id="locatie">
+                <div class="inputPair">
+                    <label for="judet">Judet*</label>  <br>
+                    <select name="judet" id="judet" required>
+                        <option value="">Selectati Judetul</option>
+                        <option value="Alba">Alba</option>
+                        <option value="Arad">Arad</option>
+                        <option value="Arges">Arges</option>
+                        <option value="Bacau">Bacau</option>
+                        <option value="Bihor">Bihor</option>
+                        <option value="Bistrita-Nasaud">Bistrita-Nasaud</option>
+                        <option value="Botosani">Botosani</option>
+                        <option value="Brasov">Brasov</option>
+                        <option value="Braila">Braila</option>
+                        <option value="Bucuresti">Bucuresti (Municipiul)</option>
+                        <option value="Buzau">Buzau</option>
+                        <option value="Caras-Severin">Caras-Severin</option>
+                        <option value="Calarasi">Calarasi</option>
+                        <option value="Cluj">Cluj</option>
+                        <option value="Constanta">Constanta</option>
+                        <option value="Covasna">Covasna</option>
+                        <option value="Dambovita">Dambovita</option>
+                        <option value="Dolj">Dolj</option>
+                        <option value="Galati">Galati</option>
+                        <option value="Giurgiu">Giurgiu</option>
+                        <option value="Gorj">Gorj</option>
+                        <option value="Harghita">Harghita</option>
+                        <option value="Hunedoara">Hunedoara</option>
+                        <option value="Ialomita">Ialomita</option>
+                        <option value="Iasi">Iasi</option>
+                        <option value="Ilfov">Ilfov</option>
+                        <option value="Maramures">Maramures</option>
+                        <option value="Mehedinti">Mehedinti</option>
+                        <option value="Mures">Mures</option>
+                        <option value="Neamt">Neamt</option>
+                        <option value="Olt">Olt</option>
+                        <option value="Prahova">Prahova</option>
+                        <option value="Satu Mare">Satu Mare</option>
+                        <option value="Salaj">Salaj</option>
+                        <option value="Sibiu">Sibiu</option>
+                        <option value="Suceava">Suceava</option>
+                        <option value="Teleorman">Teleorman</option>
+                        <option value="Timis">Timis</option>
+                        <option value="Tulcea">Tulcea</option>
+                        <option value="Vaslui">Vaslui</option>
+                        <option value="Valcea">Valcea</option>
+                        <option value="Vrancea">Vrancea</option>
+                    </select>
+                </div>
+                <div class="inputPair">
+                    <label for="localitate">Localitate/Sector*</label> <br>
+                    <input type="text" id="localitate" required>
+                </div>
+            </div>
+            <div class="inputPair">
+                <label for="adresa">Adresa*</label>  <br>
+                <input type="text" id="adresa" required>
+            </div>
+           <p id="final">Comanda</p>    
+        </form>
+    </div>
+    <div id="thanks">
+        <p id="titleThanks">
+            <span id="clientName"></span>, multumim pentru comanda!
+        </p>
+        <p id="txt">
+            Comanda va fi livrata la adresa precizata (<span id="clientAddress"></span>) in urmatoarele 30-60 de minute. In cazul in care doriti sa mai comandati ceva, puteti oricand face o noua selectie. Nu uitati, Pizza Online™ foloseste numai ingrediente de cea mai inalta calitate, pentru a crea cele mai bune feluri de pizza pentru clientii nostri. Daca aveti intrebari sau doriti sa ne lasati un mesaj, accesati pagina de contact.
+        </p>
+        <div id="finbuts">
+            <a href="index.html">Inapoi la pagina principala</a>
+            <a href="comanda.html">Comanda altceva</a>
+            <a href="contact.html">Intrebari? Contactati-ne.</a>
+        </div>
+    </div>
+    <footer>
+        <div id="foot_lvl1">
+            <a href="menu.html">Meniu</a>
+            <a href="comanda.html">Comanda</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div id="foot_lvl2">
+            Proiect de atestat realizat de Adrian-Mihael Fota, 12C, CNBS Calarasi
+        </div>
+     </footer>
+     <script src="scripts/infocomanda.js"></script>
+</body>
+</html>

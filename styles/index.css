@@ -1,0 +1,125 @@
+/*
+CSS rules to specify families:
+    font-family: 'Acme', sans-serif;
+    font-family: 'Balsamiq Sans', cursive;
+    font-family: 'Neucha', cursive;
+*/
+
+/* Color palette:
+    #0F110C Smoky Black
+    #E7ECEF Alice Blue (White)
+    #B80C09 International Orange
+    #317B22 Ao English (Green)
+    #2F6B23 Pakistan Green
+    #C8963E Satin Sheen Gold
+*/
+
+#main_banner { /* poza de la inceputul site-ului */
+    width: 100%;
+    height: auto;
+}
+
+#general_txt { /* sectiunea de introducere cu text si imagini */
+    width: 90%;
+    margin: 25px auto;
+    background-color: white;
+    padding: 2% 3%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 18px;
+    border-radius: 3%;
+}
+
+#general_txt img { 
+    width: 35%;
+    height: auto;
+    border: 5px solid #B80C09;
+    border-radius: 7%;
+    padding: 0;
+    margin: 5px 0;
+    min-height: 150px;
+    background-color: #B80C09;
+}
+
+#general_txt div {
+    width: 50%;
+    border: 5px dashed;
+    padding: 3%;
+    background-color: white;
+}
+
+#general_txt div:nth-of-type(1) {
+    border-radius: 100px 100px 5px 100px; /* setarea bordurilor textului */
+    text-align: right;
+    border-color: #317B22;
+}
+
+#general_txt div:nth-of-type(2) {
+    border-radius: 100px 100px 100px 5px;
+    text-align: left;
+    border-color: #C8963E;
+}
+
+#offers { /* sectiunea de oferte si reduceri */
+    width: 90%;
+    padding: 3px;
+    margin: auto;
+    margin-bottom: 25px;
+    border: 5px solid #B80C09;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+#offers h2 { /* titlul "oferte si reduceri" */
+    font-family: 'Acme', sans-serif;
+    text-align: center;
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+#offer_banners { 
+    display: flex;
+    height: 100%;
+    justify-content: space-around;
+    padding: 3px;
+}
+
+#offer_banners a {
+    display: inline-block;
+    width: 45%;
+    transition: all 0.5s ease-out;
+}
+
+#offer_banners a:hover {
+    transform: scale(101%);
+}
+
+#offer_banners img {
+    width: 100%;
+    height: auto;
+    /* border: 3px solid #317B22; */
+    border-radius: 15px;
+}
+
+#vertical_line { /* linia intre cele 2 oferte */
+    border-left: 3px solid #0F110C;
+    height: 310px;
+    margin: 0 3px;
+} 
+
+#img_ban {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+#img_ban img {
+    width: 90%;
+    border-radius: 15px;
+}
+

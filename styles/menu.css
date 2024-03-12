@@ -1,0 +1,149 @@
+/*
+CSS rules to specify families:
+    font-family: 'Acme', sans-serif;
+    font-family: 'Balsamiq Sans', cursive;
+    font-family: 'Neucha', cursive;
+*/
+
+/* Color palette:
+    #0F110C Smoky Black
+    #E7ECEF Alice Blue (White)
+    #B80C09 International Orange
+    #317B22 Ao English (Green)
+    #2F6B23 Pakistan Green
+    #C8963E Satin Sheen Gold
+*/
+
+#banner {
+    width: 100%;
+    height: auto;
+}
+
+#menu {
+    background-color: white; 
+    width: 90%;
+    margin: 25px auto;
+    padding: 2% 3%;
+    border-radius: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.menu_item {
+    width: 20%;
+    border: 5px solid #B80C09;
+    border-radius: 10px;
+    padding: 0.3% 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 360px;
+    text-align: center;
+    margin: 1% 2%; 
+    font-family: 'Balsamiq Sans', cursive;
+    background-color: white;
+}
+
+.menu_item img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.pizza_name {
+    font-size: 20px;
+    display: inline-block;
+    width: 100%;
+}
+
+.pizza_name span {
+    text-decoration: none;
+    color: #317B22;
+    font-size: 18px;
+}
+
+.pizza_price {
+    font-size: 24px;
+}
+
+.pizza_price sup {
+    color: #B80C09;
+    font-size: 18px;
+    margin-right: 0.3em;
+    text-decoration: line-through;
+    vertical-align: 30%;
+}
+
+.pizza_price span {
+    color: #317B22;
+}
+
+.pizza_info {
+    font-size: 15px;
+    width: 100%;
+}
+
+ .more_link { /*buton "mai mult" */
+    background-color: #317B22;
+    color: white;
+    padding: 0.5em 2em;
+    border-radius: 20px;
+    font-size: 15px;
+    transition: all 1s;
+}
+
+.more_link:hover { /* tranzitie pentru buton*/
+    background-color: #2F6B23;
+    transform: scale(105%);
+}
+
+#menu_ad { /* sectiunea de dupa meniu */
+    background-color: white;
+    width: 90%;
+    margin: 25px auto;
+    padding: 1% 0;
+    border-radius: 3%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#menu_ad img {
+    border-radius: 10px;
+    width: 25%;
+}
+
+#menu_ad div { /* textul din sectiune */
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 16px;
+    text-align: center;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#menu_ad div img {
+    width: 10%;
+    margin-top: 30px;
+}
+
+#menu_logo img {
+    width: 100px !important;
+    height: auto;
+    margin-bottom: 15px;
+    margin-top: -15px !important;
+    transition: all 1s;
+}
+
+#menu_logo p {
+    font-size: 20px;
+}
+
+#menu_logo img:hover {
+    transform: rotate3d(0, 1, 1, 60deg);
+}

@@ -1,0 +1,231 @@
+/*
+CSS rules to specify families:
+    font-family: 'Acme', sans-serif;
+    font-family: 'Balsamiq Sans', cursive;
+    font-family: 'Neucha', cursive;
+*/
+
+/* Color palette:
+    #0F110C Smoky Black
+    #E7ECEF Alice Blue (White)
+    #B80C09 International Orange
+    #317B22 Ao English (Green)
+    #2F6B23 Pakistan Green
+    #C8963E Satin Sheen Gold
+*/
+
+#comanda_banner {
+    width: 100%;
+}
+
+#pizza_list {
+    width: 90%;
+    margin: auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    /* margin-top: 20px; */
+    padding-top: 20px;
+    border-radius: 10px;
+}
+
+.pizza_cell {
+    width: 90%;
+    margin: auto;
+    border: 5px solid #B80C09;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    scroll-margin-top: 100px;
+}
+
+.infoimg {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center; 
+    width: 45%;
+}
+
+#pizza_list img {
+    width: 40%;
+    height: auto;
+    margin: 2%;
+    border-radius: 15px;
+}
+
+.pizza_infoname {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.pizza_infoname h4, .pizza_infoname p {
+    display: block;
+    margin: 5px 0;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+.pizza_infoname h4 {
+    font-size: 22px;
+}
+
+.pizza_infoname p {
+    font-size: 16px;
+    opacity: 0.8;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 18px !important;
+    opacity: 1 !important;
+}
+
+#oldPrice {
+    color: #B80C09;
+    text-decoration: line-through;
+    font-size: 15px;
+}
+
+#newPrice {
+    color: #317B22;
+    font-size: 20px;
+}
+
+#new {
+    color: #317B22;
+    font-size: 18px;
+}
+
+.input {
+    height: 40px;
+    width: 50%;
+    font-size: 22px;
+    text-align: center;
+    font-family: 'Acme', sans-serif;
+}
+
+.nr_select {
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    margin-right: 20px;
+}
+
+.nr_select img {
+   width: 35px !important;
+   cursor: pointer;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button { /* scoaterea sagetilor din input */
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#submit {
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 18px;
+    padding: 1% 2%;
+    background-color: #317B22;
+    margin-bottom: 20px;
+    color: #E7ECEF;
+    border-radius: 25px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+#submit:hover {
+    transform: scale(105%);
+    color: #C8963E;
+}
+
+#continue {
+    display: none;
+    background-color: white;
+    border-radius: 15px;
+    margin: 5% auto;
+    width: 76%;
+    padding: 20px;
+    border: 2px dashed #B80C09;
+}
+
+#sure {
+    text-align: center;
+    font-size: 22px;
+    font-family: 'Balsamiq Sans', cursive;
+    color: black;
+    margin-bottom: 10px;
+}
+
+#list_buys {
+    color: black;
+    font-family: 'Balsamiq Sans', cursive;
+    text-align: left;
+}
+
+.piz {
+    display: none;
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 18px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+#finPrice {
+    font-size: 20px;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+#price {
+    font-size: 20px;
+}
+
+#finPrice, #price {
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+#buttons {
+    display: flex;
+    margin: auto;
+    width: 40%;
+    justify-content: space-between;
+}
+
+.button {
+    padding: 2% 3%;
+    margin: 10px;
+    background-color: #317B22;
+    color: #E7ECEF;
+    font-size: 18px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.5s;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+#contbut:hover {
+    transform: scale(105%);
+    color: #C8963E;
+}
+
+#back {
+    background-color: #B80C09;
+    color:#E7ECEF;
+}
+
+#back:hover {
+    transform: scale(105%);
+    color: black;
+}
+
